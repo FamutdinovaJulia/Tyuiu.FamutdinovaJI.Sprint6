@@ -39,5 +39,10 @@ namespace Tyuiu.FamutdinovaJI.Sprint6.Task0.V29
         {
 
         }
+
+        private void buttonInfo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Tаск 0 выполнила студентка группы ИИПб-24-2 Фамутдинова Юлия Ильфатовна","Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

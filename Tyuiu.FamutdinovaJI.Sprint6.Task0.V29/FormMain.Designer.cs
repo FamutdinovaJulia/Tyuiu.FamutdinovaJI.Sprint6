@@ -32,6 +32,7 @@ namespace Tyuiu.FamutdinovaJI.Sprint6.Task0.V29
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             textBoxProblem = new TextBox();
             groupBoxProblem = new GroupBox();
+            pictureBoxForm = new PictureBox();
             groupBoxInput = new GroupBox();
             textBoxVarInput = new TextBox();
             textBoxVar = new TextBox();
@@ -39,11 +40,11 @@ namespace Tyuiu.FamutdinovaJI.Sprint6.Task0.V29
             textBoxResultOutput = new TextBox();
             textBoxResult = new TextBox();
             buttonDone = new Button();
-            pictureBoxForm = new PictureBox();
+            buttonInfo = new Button();
             groupBoxProblem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxForm).BeginInit();
             groupBoxInput.SuspendLayout();
             groupBoxResult.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxForm).BeginInit();
             SuspendLayout();
             // 
             // textBoxProblem
@@ -66,6 +67,16 @@ namespace Tyuiu.FamutdinovaJI.Sprint6.Task0.V29
             groupBoxProblem.TabIndex = 1;
             groupBoxProblem.TabStop = false;
             groupBoxProblem.Text = "Условие:";
+            // 
+            // pictureBoxForm
+            // 
+            pictureBoxForm.Cursor = Cursors.No;
+            pictureBoxForm.Image = (Image)resources.GetObject("pictureBoxForm.Image");
+            pictureBoxForm.Location = new Point(267, 52);
+            pictureBoxForm.Name = "pictureBoxForm";
+            pictureBoxForm.Size = new Size(95, 52);
+            pictureBoxForm.TabIndex = 5;
+            pictureBoxForm.TabStop = false;
             // 
             // groupBoxInput
             // 
@@ -136,21 +147,23 @@ namespace Tyuiu.FamutdinovaJI.Sprint6.Task0.V29
             buttonDone.UseVisualStyleBackColor = true;
             buttonDone.Click += buttonDone_Click;
             // 
-            // pictureBoxForm
+            // buttonInfo
             // 
-            pictureBoxForm.Cursor = Cursors.No;
-            pictureBoxForm.Image = (Image)resources.GetObject("pictureBoxForm.Image");
-            pictureBoxForm.Location = new Point(267, 52);
-            pictureBoxForm.Name = "pictureBoxForm";
-            pictureBoxForm.Size = new Size(95, 52);
-            pictureBoxForm.TabIndex = 5;
-            pictureBoxForm.TabStop = false;
+            buttonInfo.Font = new Font("Segoe UI", 20F);
+            buttonInfo.Location = new Point(469, 380);
+            buttonInfo.Name = "buttonInfo";
+            buttonInfo.Size = new Size(42, 41);
+            buttonInfo.TabIndex = 5;
+            buttonInfo.Text = "?";
+            buttonInfo.UseVisualStyleBackColor = true;
+            buttonInfo.Click += buttonInfo_Click;
             // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(725, 450);
+            Controls.Add(buttonInfo);
             Controls.Add(buttonDone);
             Controls.Add(groupBoxResult);
             Controls.Add(groupBoxInput);
@@ -162,11 +175,11 @@ namespace Tyuiu.FamutdinovaJI.Sprint6.Task0.V29
             Text = "Form1";
             groupBoxProblem.ResumeLayout(false);
             groupBoxProblem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxForm).EndInit();
             groupBoxInput.ResumeLayout(false);
             groupBoxInput.PerformLayout();
             groupBoxResult.ResumeLayout(false);
             groupBoxResult.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxForm).EndInit();
             ResumeLayout(false);
         }
 
@@ -187,5 +200,6 @@ namespace Tyuiu.FamutdinovaJI.Sprint6.Task0.V29
         private TextBox textBoxResult;
         private Button buttonDone;
         private PictureBox pictureBoxForm;
+        private Button buttonInfo;
     }
 }
